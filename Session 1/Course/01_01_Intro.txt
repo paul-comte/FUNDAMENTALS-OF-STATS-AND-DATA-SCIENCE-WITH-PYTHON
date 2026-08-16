@@ -1,0 +1,37 @@
+Welcome to our online course on Data Science with Python.
+In this first module, named Introduction to Programming
+in Python, we will explore the
+foundations of the Python programming language, which will serve as an indispensable tool
+for our statistical analysis.
+First we will start by installing the Anaconda
+distribution, which provides us with a comprehensive
+in Python environment for scientific computing.
+Once installed, we will explore how to use Jupyter
+Notebooks, a powerful tool for writing
+and executing Python code.
+Next we will dive into the world of Python programming.
+First we will cover the basic operations, such as
+arithmetic calculations and logical
+operations.
+Then, we will explore the basic data types in Python,
+such as integers, floating -point
+numbers, strings and booleans.
+Additionally, we will learn how to assign values to
+variables and perform operations
+with them.
+We will continue the lecture exploring important
+data structures such as lists, tuples, sets
+and dictionaries.
+These structures play a vital role in handling and
+representing different types of data,
+and are important to organize and manipulate data efficiently.
+To work with tabular data, we will introduce the pandas package.
+Pandas provides powerful data manipulation and
+analysis capabilities, including reading
+and writing Excel and CSV files.
+Finally, we will introduce the NumPy package, which
+supports efficient numerical operations
+in Python with remarkable speed and simplicity.
+By the end of this session, you will have a
+good foundation in Python programming, equipped
+with the essential knowledge and tools necessary to navigate on our statistical journey.

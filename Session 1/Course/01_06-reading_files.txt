@@ -1,0 +1,242 @@
+In this video we are going to learn how to read Excel
+and CSV files so to do
+that I have prepared here in my folder a few files
+a CSV file Excel file and a
+txt file which is also formatted as a CSV with
+some financial information so
+what we will do in Python is to load the information
+in these files so that is
+ready in Python to analyze so first I'm going to open one of these files for
+instance this one which is the file called data
+invoices this Excel file has
+two different spreadsheets one called data invoice
+with different columns and
+quite a few lines about 2 ,000 and then another
+spreadsheet called amount in
+which I simply have values of the invoice without an identifier
+without the column name in this one I have column
+names so I'm going to read
+both spreadsheets and I'm going to handle differently when I have a column
+name and when I don't have a column name so let's go
+for it so first what I'm
+going to do it's a I'm going to see well the name
+of the of the file I'm going to
+use a library called pandas and I'm going to import this library with the
+name PD which is the standard name when I import
+this library and what I'm going
+to do is use this library to read the Excel file so
+I'm going to put PD dot
+which indicates I'm going to use a function of this library the function
+I'm going to use is called read underscore Excel and what I have to give
+is at least the name of the Excel file I want to read and I'm going to put this
+name in quotes so the name is data invoices dot xlsx
+and it's convenient as
+well to put which of the spreadsheets I want to open because this Excel has two
+spreadsheets if I don't put anything by default it will open the first but it's
+always better to be explicit on the name and the name of the first spreadsheet
+was data invoices the same as the file data invoices
+so if I do this this is
+going to load data I want to store this data in a variable or in a data
+structure and I'm going to call this data structure DF
+invoices equal the
+result of this loading I use the prefix DF to indicate to myself that this is
+a data frame because I did it using the pandas
+function so the result is always
+a data frame which is a very convenient and complex and complete data structure
+that is available in Python so if I do this now all the information is stored
+here and if I want to see it I can simply put the
+name data frame and this
+is the information that was previously on my Excel
+including the column names
+and it has an indicator of the row number in the in the table if I just
+want to see a few lines and not all of them I can use the command head and
+maybe if I want to see five lines I can put head
+5 or if I can put head 3 I will
+just see the first three lines and remember that
+counting starts at 0 in
+Python so head 3 will show the lines 0 1 and 2 if I want to see the last lines I
+can simply use the command tail okay so now we can try to open the second
+spreadsheet that was called amount so I'm just copying
+the instruction here so
+DF amount is the same Excel file but now the
+seed name is amount so and if I
+so here okay so now I have another data frame in
+which the information from the
+second sheet is shown now the problem is that the
+first value so in this second
+spreadsheet there was no column name but pandas by default thinks that the first
+value is always the column name so I want to indicate to pandas that there
+was no column name so the way of doing this is in the same read Excel
+instruction add an argument called header equal none which means there is
+no column name and now it will just put zero because
+there is no name for it but
+at least all the values are into the data part of
+the data frames if I want
+I can change the column name for something that is
+more useful for me for
+instance I could put DF amount columns which means
+the columns the column names
+of my data frame and then I can put here I pass as a list all the column names
+that I want to change in this case there is only
+one column so I have to put only
+one column name I'm going to put the name amount and then this is now my
+column name because I have decided so so now that I have this information in
+Python I will be able to operate my statistics my graphs and make a lot of
+things with it so this is if I have an Excel what
+happens if I have a CSV file
+so CSV files are a type of structured files in which I have information
+separated by symbol this symbol can be a comma a tabulation can be a semicolon
+it depends it depends on the people that send me
+the file there are many ways of
+structuring this file so I will have to explore a little bit which one is the
+more convenient so in this case I'm going to open
+this file called the data
+symbols dot CSV okay so to do that I'm going to
+create a variable name called
+DF symbols again I use the DF prefix for my own convenience to specify that this
+is a data frame because I'm going to load the data
+using pandas so I use the
+pandas package and then use the dot to access the function and the function I
+want to use this time is not read Excel is read CSV this is a different function
+that is appropriate to read CSV files same I will have to put at least the
+name of the file and the name of the file is data
+symbols dot CSV CSV files
+don't have different spreadsheets they only have one so I don't have to put the
+seed name and if I do this and then I put the
+symbol to see the result I can
+even put head 5 to see the five first lines what
+I see is that oh I made a
+mistake here I put symbols in the name but I put
+only symbol when I try to see
+it so okay so when I do this it already loaded well
+so it took the column names
+as they are day 1 day 2 day 3 etc it understood what the separator that it
+has to use and everything went perfectly if you want to change the separator
+because sometimes it fails you can use the argument
+sep separator equal and
+then in quotes you put the separator that you want to use in this case my
+file it's using a comma which is the default symbol
+for CSV so basically if I
+put separator equal a comma it's like not putting anything because that's the
+default value but if you try to read the file and
+all the information comes
+into a single line and then you see that there
+was a semicolon used to to
+separate the information you could change this here in this case not
+working because it does not how the information was prepared but that's how
+will you test here what the separator works to read
+the data correctly okay
+how can I analyze this data now well one thing you can do is to see what's the
+shape of this data so you can use the command shape
+to see that there are 100
+rows and 365 columns if we use it with the DSDF
+invoices for instance we will
+see that that data frame had 2 ,000 lines rows and
+5 columns if you want to see
+the name of the columns of a data frame you can just
+say DF invoice the name of
+the data frame dot columns yes and then you will have all the names of the
+columns in the data frame if you want to have some information like general
+information about this data frame you can use the info
+function and this info
+function has to have this parenthesis at the end so shape and columns don't have
+because it's their attributes info it's
+actually function that says get the info
+from the data frame and print it that's why it has
+a parenthesis and again I
+forget the S here and what I get here is that it tells me something about the
+data frame for instance it tells me that there are 2
+,000 lines there are 5
+columns and it tells me that the first line it's
+an integer second line it's a
+float number okay so it's telling me the data types remember the data types
+from the previous video it's telling me what are the data types of each of the
+columns other instructional function I can use is the
+following invoices I can
+use the describe function and this describe function is going to get all
+the numeric columns and tell me some basic
+statistics about them so what's
+the number of elements that are in the column what's the mean value the
+standard deviation the minimum maximum first
+quartile second quartile etc okay
+so he's doing all the statistics for me with just
+using this describe function I
+can actually do it as well for the symbols and I get all statistics for
+these values okay so if I want to select single
+column on this data frame for
+instance let's say invoices I want to select only the
+amount column I can do
+it this way I specify the data frame and then in
+square brackets I put the column
+I want to get which is the column amount so now I will have information
+only about that particular column so let me just do something very similar but
+with different file there was another file I had in
+my in my folder which was
+is called sales US txt so these are data about the sales of a company in the in
+the US so if I open this so this is not a Excel
+file it's not a CSV file but
+it's like a CSV so I can actually use the CSV
+function as well even if the
+extension is not CSV so I can put df sales equal pd
+.read .csv and then I
+put the name of the file sales underscore US dot txt
+I don't know I
+didn't open the file yet so I don't know what's the separator so I'm going to
+just try like that let's see what I get so if I
+see the file then I see this so
+I'm not separating the data correctly okay so all the data comes into a single
+column and as you see there is a semicolon used all the time to separate
+the data so this indicates that my first guess that
+the separator was a comma was
+incorrect and it should be semicolon and the other
+thing I see here is that the
+first three lines appears to be just metadata
+information and the data really
+start here in line two which is the first line with the column names and
+then it has information so if I want this function to ignore a number of
+lines I can simply say skip rows how many rows I
+want to skip well one two
+and three these are the ones that are not adding anything to my structured
+data and then df sales oh this is not sales this is
+separator okay now we've
+got unexpected keyword sales because I was putting here sales but I have to put
+set because it's the separator I want to get
+and now I have data so I have my
+three column names I have my three columns with data
+I ignored the metadata
+because I had these skip rows and maybe what I want
+to do here is to plot these
+two prices here or sales and to plot something from a data frame it's
+actually quite simple I could just say let's get
+this data frame let's get a
+column for instance this one Boston remember this is how we selected a
+column from the data frame square bracket and then in quotes I put the
+name of the column and then what I want to do
+with this is to make a plot of the
+data so plot is a function so I will have to put
+these parentheses as well if
+I do this I will have immediately a plot taken from the values in the Boston
+column I could even try to plot Boston and Portland in the same graph so here
+because I have two columns I want to plot I will give not just the name of
+the column but a list with all the column names I want to pass so Boston
+and Portland and then I will close I will close
+the bracket so I have two square
+brackets the first one the outer one is because it's the indicator to Python
+to select some data in the data frame same way as I
+did here I need always
+this bracket to say I'm going to select something from the inside and then I
+have a second one because what I'm selecting is a list of elements so the
+second one is basically the indication that I'm going to write a list now
+because I want to have more than one element so
+if I write this and we plot
+what I will have now is that the same plot instruction is going to understand
+that they have two columns and that they have to be printed to plot it in the
+same graph and of course I need to know through a
+legend and colors which one is
+is Boston and which one is Portland and all this is
+automatic in pandas we will
+be able to do many more things in the future with
+the matplotlib library but
+already when you want to visualize quickly some
+information pandas allow us
+to do it with the describe info and the plot functions in almost no time

@@ -1,0 +1,306 @@
+Hello, in this video we are going to see a new
+library called NumPy and a very useful
+tool which is vectorization.
+So NumPy is a Python library specially designed
+for numeric computing and introduce a new
+data type called the nd array or NumPy array which has some functionalities very useful
+to do statistics and calculation with large data sets.
+It's an extension of the list but it has new
+functionalities and it allows us to have arrays
+of any dimension, not just one dimensional list.
+A cool feature is that we can actually do operations
+to elements of the list all at
+once.
+We don't have to go element by element doing
+some kind of operation, we can just do it
+all at once.
+So typically it's imported like this, import NumPy as
+np, so we will start doing this,
+import NumPy as np, shift enter, now what we are
+going to do is I am going to create
+a couple of lists and then I am going to transform
+the list into NumPy arrays to see the difference
+between both data structures.
+So first I will create this list here, and then I
+am going to create, I am going to transform
+this into a NumPy array, the way of doing that is
+simply saying array equals np .array
+and then in parenthesis we will write a list and this
+is the list I am passing as an argument,
+it's actually the same list I put here and because I
+am not doing anything except starting
+and ending the definition with the square brackets I know that this is a list.
+So these two objects are list and these two objects
+now are nd arrays.
+We can for instance print the elements of the list
+and the type of the list and on another
+line we type the elements of the array and the type
+of the array, remember that the elements
+are actually the same but the types are not, so in
+the first line it's printing the elements
+separated by the comma and the class is a list, in
+the second line all the elements
+are just separated by spaces, the dot means that
+it's a floating number and the class
+is an array.
+So even if we put a 6 here which is an integer
+because one of the elements was a floating
+number the nd array is going to take all the
+elements to always be of the same data type
+and this is because it's more efficient to store in
+memory and manage the calculations
+if all the objects are of the same data type.
+So it's going to cast all the integers in this list
+to float numbers because at least
+one of them it was a float number.
+So now let's see the main difference between list and
+nd arrays, so if I take my list here
+and I find what the sum of the list is, so I can
+say myList plus myList2, if you remember
+the plus symbol when applied to list meant
+concatenation of the list, so basically what
+I have is all the first list here followed by all
+the elements of the second list, but
+if I do this now with my arrays, exactly the same,
+array1 plus array2, what I will obtain
+is a single array of the same length in which each
+of the elements is the sum of the elements
+of the arrays, so basically the first element is the
+sum of 6 plus 0 .5, the second element
+is the sum of 7 plus minus 2, so 7 minus 2, and so on.
+So this is what we call vectorization, so basically
+we are making an arithmetic operation
+not between variables or between numbers but between
+arrays, but this arithmetic operation
+is done element -wise through all the elements of the array.
+For that to work, of course, the arrays have to
+have the same dimension because otherwise
+it would be difficult to know which element has to
+be operating with which element, so
+it's important that this will work with arrays of the same dimension.
+There is also something that we can do with arrays
+and is to create two -dimensional arrays
+or a matrix, so if I want to create a matrix, I will
+do it like this, so I will create an
+array and then I will put the brackets for the
+parenthesis to say I'm going to put inside
+the parenthesis all the information, and what I'm
+putting here is a list containing two
+lists, remember that we talked about nested lists,
+so this is a list containing two lists,
+so this is interpreted by NumPy as you want to have
+one line and another line, so basically
+you want to have two arrays, one on top of the other, and that's nothing but a list,
+a matrix, sorry.
+So if I print this object that I just have created,
+my matrix, what I obtain is this.
+You see that the list contains a series of
+vectors and each of the vectors is going to
+be a row on the matrix, that's the order in which we put the information.
+If I want to know what shape this matrix has, so
+how many rows and how many columns, I can
+use the same instruction that I used for Pandas
+DataFrames, which is shape, if I just say
+mainMatrix .shape, I will get the attribute shape
+from this matrix, which is how many
+lines, first number is the number of lines, and how
+many columns I have in my matrix.
+If what I want actually is to have this list as
+columns, so I would like to have 1, 2,
+5, 4, 3, 4, I can transpose the matrix, to
+transpose the matrix, it's quite simple, I
+can just take mainMatrix, and then apply the T
+operator to the matrix, and then I can store
+the result in another variable that I call
+mTranspose, and this, if I print it, transpose,
+without typos, now my matrix has been transposed
+to the list element of the list, now are the
+columns of the matrix.
+Ok, good, we are not limited to only one or two
+dimensions, we can put more dimensions
+in an array, so basically like a tensor, so if you
+want to create an array with more than
+two dimensions, we will do it this way, so I create
+an array that I call m, so I put
+the instruction, between the parenthesis I'm going to
+write my elements, and what I'm going
+to do here is a list containing another list
+containing elements of one dimension, so if
+I just put all these things together and I see
+the shape of this array, the shape is
+2 by 2 by 2, so basically it's like a cube of length
+2, height 2, and width equal to
+2, and we are not even limited to 3 dimensions, we
+could have many many more dimensions here,
+but maybe it's difficult to visualize.
+So, if I want to access an element of this matrix, so let's say for instance I'm going
+to copy this again, I'm going to work with this
+matrix, ok, that's my matrix, that's
+the one I'm going to use to access the element, so
+if I want to get the element in line 1
+column 2, so it will be line 1, remember, starts
+counting from 0, so line 1 is this
+one, so this is line 0, this is line 1, column 2
+is 0, 1, 2, it's this column here, so the
+element in line 1 column 2 will be this form, and if I want to access that, I will simply
+say my matrix, when I have an object and I want to access an element inside, as for
+Pandas DataFrames, I have to use square brackets,
+which is like the selector operator, and then
+I will put, give me the element 1, 2, and that
+element, if I don't make a typo, it's
+the element 4, which is this one, if I want to
+access the whole line, let's say I want
+to get the first row, I will say my matrix, my
+matrix, and then the selector operator,
+I will just put one number, so the first row
+is number 0, so this means give me the whole
+first line, like that, if I want to get, let's say
+the second column, this 2 and 3, I can
+say my matrix, so I need to say, I want to select
+the second argument here, but I want
+to get all the elements that corresponds to the
+first argument, which is the lines, so
+the shortcut to write that to NumPy is column, which
+means all the elements of the column
+number 1, which is the second column, and then I
+get this 2 and this 3, so this column
+means all the elements on that dimension, ok, I can
+select some of the elements only,
+not just one or the whole line, doing like this, for
+instance, I get my matrix, and I
+want to get elements from 0 to 2, so this syntax
+means, give me all the lines starting
+from 0 and ending one number before this upper
+limit, that means, that gives me the lines
+from 0 to 1, which basically is the whole
+matrix, because I only have two columns, but
+suppose that I have a bigger matrix, let's say
+like that, I'm going to make a second
+matrix, in which I'm going to include two more lines, I'm going to probably change
+the numbers a bit, ok, like that, just to make
+sure that they are all different, ok,
+so if I print this matrix, I'm probably missing,
+closing the bracket here, so I have one bracket
+closing this one, which is the list of lists, and
+then I have 1, 2, 3 and 4 vectors completely
+enclosed in brackets, so this will be correct, so I
+have this matrix, which is a 4 by 3 matrix,
+so suppose that I want to get the first and second
+line only, so then I will do my matrix,
+and I want to go from the first line, so line number
+0, to the second line, which is line
+number 1, so the number I have to put after the
+column is one more, so 2, so if I put
+my matrix from 0 to just before the 2, it gives me
+basically the first two lines, if
+I want to access line number 1 and line number
+2, which are the second and third elements
+of the matrix, I can also put it like that, my
+matrix 2, so I start in element line number
+1, and I want 1, 2, but not 3, but I need to put up to 3, because I know this is not
+going to be taken into account, so if I write
+this, I get line number 1, line number 2,
+and I do not get line number 3, it stops just
+there, ok, so this is how we create matrices,
+how we access elements, or lines, or columns, or
+slices of lines, or slices of columns,
+will be the same, let's see now, how we can use
+these arrays to do element wise operations,
+let's build this into a text cell, so I am going
+to create two arrays here, like that,
+ok, this happened because the cell is a text cell,
+so now it is a code cell, I have two
+arrays of the same dimension, so what I would
+like to do is multiply each of the elements
+together, so 3 times 2, 6 times 3, 5 times 2, all I
+have to do is do like that, I am
+going to print the result explicitly, even if it was the only one on the cell, it will
+not be necessary, but I like using the print, so
+if I just say v1 times v2, I obtain an
+array again with three elements, in which each of the elements is the multiplication
+of the first times the second element, I can even
+do what other things I can do here,
+I can do of course addition, that would be not
+surprising, but I can do any complex thing
+like for instance exponentiation, suppose that
+I want to take 3 to the power of 2, 6
+to the power of 3, 5 to the power of 2, so still
+I can just say v1 exponentiate it to
+v2, it will just take all the elements one by one or pairs by pairs and they will do
+the operation, there are a couple of things that are very useful with arrays when you
+want to create arrays to work with large data sets,
+one is to create an array with all zeros
+or an array with all ones or an array with a
+sequence, and we are going to use this a lot
+for some of the functions that we are going to
+create in the next session, so that's actually
+quite easy to do in NumPy, so let's suppose that I
+want to have an array in which I have
+10 ones, 1, 1, 1, 1, and then I will write my ones
+is the name I'm giving to this object,
+np ones, and how many do I want? 10, so this np
+ones creates a one -dimensional array
+with 10 ones, so if I print this, this is my
+array, so this array maybe it's because I want to
+initialize an array with all ones and then I will
+start putting things in there, I can also
+initialize the same thing, instead of ones I can use
+zeros, with the instruction np .zeros
+so np .ones creates ones, np .zeros creates zeros, if
+I want to create a two -dimensional array
+with zeros or ones, for instance I want to create
+a 7x3 matrix with all ones, I will do as
+follows, I will create a variable name of my choice,
+my ones array, the np .ones command
+it's exactly the same, but now between the parentheses, instead of just giving a number
+or even instead of giving two numbers, I need to
+pass a tuple with how many lines and how many
+columns I want, so I need two parentheses, one
+specifying this is the function arguments
+and the second one, the inner one, is because I'm
+passing a tuple, so this will not work
+and this is a common mistake that you may have,
+so remember that you have to put here
+a second pair of brackets, of parentheses, and now
+what I have is an array of 7x3 with all ones
+and the same will be exactly with the zeros,
+again I need to pass a tuple as an argument
+so that's why I have two parentheses on each side,
+the last construction which is useful to
+initialize arrays to be used later for calculations
+is if I want to create a list of numbers
+all in order, like an index, so the instruction
+to do that is called arrange, so let's imagine
+I want to create a sequence and I want to
+store that sequence in a variable that I call my sec
+then the instruction is np .arrange () and a common
+mistake is that you forget the a and you put
+np .arrange () and then if you just give an argument
+then this is going to create a sequence
+starting from 0 up to the last integer number before
+the 10, so basically from 0 to 9
+which counts for 10 numbers, so somehow the 10
+is logical but you always have to remember that
+this 10 will never be included on the sequence,
+so from 0 to 9, and if you want to create
+a range that does not start from 0 but from
+other element, for instance like this
+I create a second sequence that starts at 20 and ends
+not at 60 because 60 is always the element
+that it will never be reached, so it's not going
+to end either at 59 because the third argument
+indicates what's the step between the elements of the
+sequence, so basically it's a sequence
+that starts at 20 and increases every 5 units and
+will stop in the last number in this sequence
+increased by 5 units just before the 60, so that
+will be 55 and this is exactly what I get
+from 20 to 55, I can even go backwards in my sequence
+just by simply changing the limits
+to let's say sequence 3, it's a range that starts
+at 100, ends at 0 and it's going backwards
+because the step is negative, if I want this
+to be backwards I really need to put the step as negative
+so if I print this, it starts at 100 and
+surprisingly, or not surprisingly, it's not ending in 0
+but in 5 because the last number is never reached

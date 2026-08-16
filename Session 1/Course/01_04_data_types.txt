@@ -1,0 +1,136 @@
+In this video, we are going to talk about data types.
+When we assign a value to a variable, even if we do
+not think much about it, computers
+need to know the type of data that they need to
+store, if only for allocating enough memory
+space throughout the execution of the program.
+When we define a variable, some languages need to be
+explicitly told what data type
+that variable will be for all durations of the program.
+These are referred as statically typed languages.
+In Python, this is not necessary, and Python
+decides by itself the type of variable into
+the flow string as it is more convenient through execution.
+This makes Python a dynamically typed language.
+Let's start first with the type of data that we can encode in Python.
+Some basic data types are Integer, Float, String, and Boolean.
+Let's see how this works in practice.
+If I want to make an integer value, I will just
+say a equal to 5, so there is no decimal
+part, so that will be an integer.
+So, if I ask Python what is the type of the
+variable a, it will say the type is an integer.
+If I define a variable equal to 3 .1, and then I
+ask Python what is the type of b, then the
+type will be a float, because it is so, but it has a decimal point.
+Even if I put 3 .0, which means like only has an
+integer part different from 0, the type
+of this number, this variable, is still a float.
+Now, I can also put a string value to a variable,
+for instance, myString, this is variable name,
+and I want this to be equal to the string, hello.
+So, it's a string because I'm using quotes to enclose the text.
+I'm using single quotes.
+I could use double quotes, it's exactly the same.
+So, if I ask Python what's the type of the variable
+myString, the type is str, which
+means string.
+If I take a variable, for instance, x equal, and then
+I put a number, but I put the number
+in quotes, this is not an integer, this is a string
+representing the symbol 5, which
+is very different from this definition here in which
+the variable a store the value 5.
+So, if I put here what's the type of x, the type
+is a string because I put the symbol
+5 in between quotes.
+Same thing if I put decimal part, the type is still a string.
+And the last type that we are going to use very
+often in this course, it's the Boolean
+type.
+For instance, if I say myExpression, this is the
+name of a variable, and the value I
+want to put in this expression is equal to the
+comparison 3 equal to 2.
+So, if I print the result of this, the result is false.
+And if I print the type of this variable, the type is bool, which means a Boolean value.
+Boolean variables can only have two values, true or false.
+Sometimes I can cast or transform a data type into
+another, for instance, let's say like
+that, let's put casting data types, suppose that
+they have a variable which is equal to
+5, and this is an integer.
+But for some reason, I would like this 5 to be
+treated as a floating number, like 5 .0.
+So I can say, why don't you take a and transform
+it into a floating number, so I can do it
+like that, get the value a, transform it into a
+floating number, and put the value again
+in the variable a.
+I can reuse the value, the variable name on the left and on the right.
+Remember that this symbol is an assignment symbol,
+not an equality, so this is not going
+to compare this and this, it's simply going to
+compute the expression here and assign
+the value in the left hand side.
+So now, if I see what's the type of a, the type now is floating.
+I can do the other way around, suppose that I have
+a value which is 5 .0, which will result
+in a type of floating, but I can say I would like p to be an integer.
+So I'm going to use the keyword ent to say, give
+me the integer part of the value b.
+So b now is 5 and not 5 .0, so the type of b is an integer.
+If I do this operation with a floating number
+which has a non -zero decimal part, for instance,
+x equals 3 .2, and I say print the integer part of
+x, I'm actually eliminating all the
+floating parts, so I'm losing some information.
+So you have to be careful when you're casting data types into another.
+Sometimes you don't lose information, sometimes you do lose information.
+One thing that you can sometimes try to do is,
+imagine you have a variable, I'm going
+to use again the name x for convenience, which is the value 5.
+So this is a string, but suppose that you know that
+this string contains an integer number,
+and you want to cast the value in that string to that of the integer number.
+Then you can do x integer, in this variable name I'm
+explicitly saying, oh this x now
+has to be an integer, is the integer part, which is
+the integer version of the value x,
+which was a string.
+So if I print the value, and why not with a comma,
+I print the type of this, I will get that now
+x int is actually the number 5, and the class,
+the data type, is an integer.
+Okay, so you can do this with the floating as well,
+if this was 5 .3, maybe you could say,
+can I transform this to a float, okay, and yeah,
+because Python is going to try to put
+that into a float, and if it succeeds, it will do it.
+If it can't, it will give an error.
+Now, this is important because sometimes you have a number, which is given as a string,
+and actually you can't do arithmetic operations with numbers in a string form.
+For instance, what happens if you try to do this?
+You get an error, because this is a string, and that's a number,
+so Python does not understand that this is actually the number 5.
+So you have to tell him that you want to add the number 5,
+which comes from the string 5, and then you will be able to get the result.
+This happens sometimes when you read files with numbers,
+but these numbers get loaded as strings, and you
+need to transform all of them into numbers.
+We will see an example of this in one of the exercises.
+Okay, so we have seen the four basic data types that exist in Python,
+which are integers, floating, string, and booleans,
+and when we will start actually loading some
+libraries, like NumPy or Pandas,
+we will start to encounter more complex data types or
+data structures that are going to...
+We have seen four very basic data types that you can find in Python.
+This is going to be useful when we load large data sets,
+to identify each of the columns of this data set, which data type it is,
+and what type of operation we can perform on them.
+And if the data type is maybe not well read, like
+for instance integers or floating numbers
+being read as strings, we will have to manually or semi -automatically
+transform these numbers into something we can operate with.
+That's why this is a very important thing to keep in mind.

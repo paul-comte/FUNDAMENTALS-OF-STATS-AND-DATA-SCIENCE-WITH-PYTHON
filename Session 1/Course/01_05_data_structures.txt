@@ -1,0 +1,185 @@
+In this video, we are going to see some of the
+basic data structures available in Python.
+Data structures are a more complex way to store data than just a single value.
+We will see here the main data structures in Python,
+but in some other libraries, they
+have specific data structures that are optimal for some type of operation.
+For instance, in NumPy, they have an n -dimensional
+array, or in Pandas, they provide what is
+called as a data frame.
+Let's have a look to the data structures that we
+have available in Python, which are the
+following.
+I'm going to put them here, are lists, tuples, sets, and dictionaries.
+So let's start from the first one, list.
+So lists are collections of elements of any data type,
+and to write a collection, I can
+do, for instance, as follows.
+Let's say I write a variable name called
+numList, because I'm going to put a collection of numbers,
+and then I will end and start my collection with
+square brackets, and this is the syntax
+to tell Python I'm going to write a list, and then
+I will put the elements separated
+by comma, 2, 6, and 8, for instance.
+I can also write a string list, so a list or a
+collection of strings, so again, I will
+use square brackets to put my names, for instance,
+hello, that's an element, second one will
+be how are you?
+So this is a list with four elements, each of them is a string.
+Or I could have a list with mixed elements, for
+instance, mixed list equal, and I can
+put the number, and then I can put string, I could
+even put boolean value, like true.
+So these are basically lists, are just collections
+of elements that I can put in an order.
+If I want to access any of these elements, for
+instance, I want to print the first element
+on the numList, I could do like this, I write the
+variable name, and then in square brackets,
+I can say what is the position on the list that
+I want to access, and one important thing
+in Python is that all the enumerations start from 0,
+so the first element is actually the
+position 0, so numList position 0 refers to this
+element here, or for instance, string
+list position 2 will be 0, 1, 2, will be R. This is very important, always starting
+from 0.
+If you want to write the very, very last element,
+for instance, from the mixed list, the last
+element can be always written as minus 1, so
+it's a shortcut to say just give me the
+last element, regardless of how many elements I have
+here, so because in the mixed list
+the last element was the boolean true, this is the element I get when I put minus 1.
+If I want to add an element to the list, I
+will do as follows, I will write the name
+of my list, and I will add the function append
+with a dot, so the name of the list, a dot
+to indicate that I'm going to do an operation to that
+list, the operation is to append an
+element and then in parenthesis I will put the
+element that I want to append, so imagine
+that I want to put a 6, so if I execute this code
+and I print again this list, now the
+list was 268, and a new 6 has appeared at the end of the list.
+If what I want to do is insert an element, not at
+the end, but in the middle, I can use
+the insert command, so numlist .insert, and now in
+this case, insert, I have to say what's
+the position at which I want to insert the element, and what is the element I want to
+insert, for instance a 9, if I want to do this, num, and then I want to print again
+to see the result, the name was inserted at
+position 1, that remember is the second position
+of the list, because the first position is labelled
+as 0, so position 1 is basically
+0 and 1, the second position of the list.
+I could even put a list inside a list, so a list
+is a collection of elements, so let's
+make a list 1 which is equal to 1 and 2, and
+then make a list 2 which is equal to a string
+hi, the second element is a number, and the third
+element is the list 1, so if I print
+this list, the list 2, and let's put maybe a print to
+make it more explicit, print, what
+I will have is a list with 3 elements, first
+element is a string, second element is a number,
+and the third element is a whole complete list with
+more than one element, so if I want
+to print the element number 2, which is the third
+element, I can just say list 2, give
+me the element number 2, and what I will get is
+not just the one, what I will get is the
+whole list, because the whole list is a single
+element in the previous list, it's like having
+a drawer inside another drawer, suppose that I want
+to concatenate two lists, so I have
+list 1, let's repeat the names, list 2 is equal to
+different numbers, and what I would
+like, that will be a square bracket, what I would like is to have only one list with
+all the elements on a line, so that's very
+simple, I'm going to create a new variable
+name in which I will put all this new list with all
+the elements, and to concatenate
+list I simply use the plus symbol that when used with
+list does not mean addition, it
+means concatenation, so if I just use the plus symbol
+with two lists, the result it
+will be a single list in which all the elements has
+been put after the other, ok, so this
+is a list, if I want to change an element, for
+instance I want to change this 2 and I
+would like it to be a 0, I can simply say from list
+3 the number at position 0, which
+is list 2, I would like it to be a 3, so now if
+I print the list 3 the number has changed,
+so I can create list and modify values wherever I
+want just accessing using this square bracket
+indicator, so this is list, the second element is
+called tuple, tuples are very similar to
+list with one particularity, once you have a tuple
+created you cannot change the elements
+inside, so this operation I did here with the list it will be impossible to do with
+tuple, and if you want to create a tuple you will do
+exactly the same, let's say, let's
+copy this thing using tuples will be tuple1
+equals and instead of using the square bracket
+which is the symbol for creating a list I'm going
+to use a simple parenthesis, so 2, 5, 4,
+and then if I print it I will see that when I was
+printing a list it used as well the square bracket,
+now it's using the parenthesis, so why tuples are important?
+because sometimes you want to have important
+information that you don't want any function
+on any other part of your program to change, so you just can put it in a tuple and you
+know that it will not be modified by any other part
+of your code, other than that it's very
+similar to a list, another data structure which is
+quite convenient are sets, so sets
+are unordered collections with no duplicate elements,
+basically in a list you have an
+order you have first element and the second
+element and you can have several elements
+the same, in a set you just have the unique
+elements and in no particular order, so one
+way of creating a set it's for instance you create a list and you transform it into a
+set this could be done like this, let's say I
+create a list which is 1 1 5 3 5 7 8 1 which
+has some duplicates and then I create the set
+which is the set coming from the list
+1, so this set is a keyword of Python, my set
+is the name I'm giving to the variable
+storing this set, so if I print this set my list 1,
+what I have is all the elements that
+were in my list but only once and without duplicates, so this is convenient as well
+if you want to have a list of unique names for
+instance on a database, the last thing I can
+do is create a dictionary, dictionaries are a very
+very useful thing, basically a dictionary
+is a pair key value or pairs key values, so let me just write down one and then you will see
+that is actually very easy to understand and it's very
+convenient, so I'm going to create a
+dictionary called mydict, to create a dictionary I'm
+going to use curly braces okay that's how I
+tell Python what comes next is a dictionary, so I'm
+going to write first what will be the key
+for instance name colon and then I want to say what's
+the name of that person okay so that's
+let's say one record that has a key the name and it
+has a value which is named Kevin and
+if I want to have another record with another key
+maybe the key is age and the age is 22
+and maybe another record will be the key and the value has to be separated by the colon
+and then the grade and maybe the grade is a 98
+so this is dictionary if I print it I just have
+this this collection of key values pairs so if I want
+to know what's the name of this person
+I could access like this and just simply putting the
+key here it will give me the value for that
+key if I put what is the age and I have to respect
+the capitalization it will give me
+the value that corresponds to the key age so this
+one will have a lot of records actually
+allows me to to manipulate data as if it was a small database in which I can just
+access different properties of the data and get the values

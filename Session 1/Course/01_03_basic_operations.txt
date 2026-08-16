@@ -1,0 +1,660 @@
+Hello, in this video we are going to see some of the basic operations in Python
+So each style of the Jupyter Notebook can be
+seen as a calculator
+If I write an arithmetic expression, like this one
+And then I press Shift -Enter, the result appears on the result area
+So I can make several operations in a single cell
+For instance, I can make 3 plus 2
+And then I press Enter, and then I press 5 plus 6
+But if I press Shift -Enter after putting two operations in the cell
+I will only see the last of the operations that I have introduced
+If I want to see the results of every one of the operations I do
+What I have to do is to use the print statement, like this
+So I can say print, and then in parentheses I can
+put the expression that I want to evaluate
+3 plus 2, and notice that I can put spaces to make it more clear
+But the spaces are not necessary, this is not part of the syntax
+It's just for me to make it more clear
+So if I put print and then arithmetic expression 3 plus 2
+This will be printed, so nothing really different from this expression here
+Just to make it equal, I'm going to put the spaces
+And by the way, you can come back to the previous
+cell and re -evaluate the cell by pressing again Shift -Enter
+When you press Shift -Enter and there is already an existing cell below
+You will not create an existing cell, a new cell
+The focus will go to the cell below
+But what happens is that if you see the number here
+Now this is number 4 which comes after number 3
+So these numbers that we have seen on the side
+Actually tell you the order of the operations that have
+been interpreted through the notebook
+So typically we go from 1 to the end
+But you can come back and re -evaluate an expression
+So this number will tell you that this cell has
+been evaluated after this one
+It's not very important by now, but it may be in the future
+So we were saying, if I use the print statement and an arithmetic expression
+Then the result gets printed on the screen
+The advantage of this is that if I put two of these arithmetic expressions
+With the print statement, both of them will get printed on the screen
+So it's a safer way of printing results on the screen
+Other thing I can do here is, instead of putting the arithmetic expression
+Directly inside of the print statement
+What I can do is to assign the result to a variable
+So I'm going to do it this way
+I'm going to say that the variable a, and that's a name that I'm inventing
+It's equal to the result of the operation 3 plus 2
+Which means that from now on
+Python will store the value 5 in the variable name a
+So in the next line I can say
+Why don't you print the value of a?
+And then I put print without any quotes
+I just put the variable name here
+And what I get as a result is the value inside
+the variable
+Even in a new cell, I can still call that value
+Because that value remains in memory all along our work in this notebook
+So what I can do here is come back to this cell
+I can define a new variable which is 5 plus 6
+And then I can print a
+And then I can print b
+So that's another way of printing two results of operations
+One after the other
+I could even print different results
+With the same print statement like this
+print a, b
+So I can actually print different values
+If I separate the variables with a comma
+But instead of being printed one line after the other
+They will be printed in the same line with a space in between
+In this print statement I'm using directly the letter a
+Because a is the name of the variable I gave to store the result of this operation
+If I want to print the letter a, literally
+What I will have to do is to use the print statement again
+The parenthesis again
+But then I will use quotes
+If I put single quote, a single quote
+What I will get printed is literally the letter a
+I can also use double quotes
+This is exactly equivalent
+So if I want to print a is equal to the value of this statement
+I can do it this way
+print
+Then I will start with quotes
+a is equal to comma
+And then I put the variable a without quotes
+Because this time what I want to put is the value
+So in this case a is equal to 5
+Is the expression that is printed
+Ok
+So let's see now some of the basic operations
+That we can use in Python
+So let's make another section here
+So I just press escape m to make this cell a text cell
+Or a markdown cell
+And I'm going to put the title
+To hash symbols
+Basic operations
+Now when I press enter in the next cell
+It comes directly again to Python code mode
+So the basic operations I can do in Python are as follows
+I'm going just to write them one by one
+So the first is the sum
+So 3 plus 2
+For instance
+Then I press enter
+That's the sum
+One thing I can do in the code cell
+Is actually put a little comment
+Which is a line of text that will not be interpreted by Python
+To do that I will use the hash symbol
+So for instance this is the sum operation
+So the hash symbol in a text cell
+Has the meaning of creating a title
+But the hash symbol in a code cell
+Has the meaning of telling Python to ignore that line
+So it's basically a comment
+So this line will be ignored
+And just this line will be executed
+And since I just have one arithmetic operation
+In this cell
+It will print the result
+So I don't need to have a print
+In this particular cell to have the result
+Then I can have of course subtractions
+I can have the product
+Using the star symbol
+5 times 3
+I can have division
+And I will have a floating number
+2 .5
+I can use exponentiation
+But to use exponentiation
+I don't have the same symbol
+As sometimes is used in other software like Excel
+To exponentiate a number in Python
+For instance 5 to the power of 2
+Let's put it like that
+Exponentiation
+That's a comment remember
+What I will write is 5
+2 stars
+And 2 stars means
+The next number is the exponent
+To the power of 2
+If I want to compute
+5 to the power of 3
+I will not put 3 stars
+I will still put 2 stars
+But I will put a 3 as an exponent
+Another interesting operation
+That comes in Python by default
+Is something called
+Floor division
+And it's
+Done with the symbol
+Double slash
+So the floor division
+Works as follows
+Suppose that I have
+5 floor division
+By 2
+So 5 divided by 2 is 2 .5
+But 5 floor division by 2
+Would only give me
+The integer part
+Of the operation
+So it will ignore
+The floating part
+So basically it's just
+It's the equivalent of dividing
+And then taking the integer part
+The complementary operation to this
+Is something called
+The mode division
+Which is
+Expressed with the symbol
+Percentage
+So in this case
+5 floor division 2
+Works as follows
+I try to divide 5
+Into integer parts
+By 2
+So it will be
+The result will be 2
+And the reminder is 1
+So the mode division
+5 and 2
+Will equal to 1
+It's basically the reminder
+If I try to divide 5 by 2
+But I don't want to get
+Any floating point
+At the end
+So these are the basic operations
+And then we have
+One more which is comparisons
+Comparisons
+Which are a bit
+Different of what we are used to
+To work
+In our mathematics
+Courses
+So in comparisons
+What I do is I get 2 numbers
+Or 2 expressions having a value
+Let's say we have 2 numbers
+And I want to compare
+If these 2 numbers are exactly the same
+If they are the same
+The result will be
+True
+It's a boolean value
+If they are not the same
+The result will be false
+So let's say
+I want to test
+If 3 is equal to 2
+So I will use 2 equal signs
+Not 1
+1 equal sign
+In Python
+Means I want to assign
+The value on the right hand side
+To the variable on the left hand side
+If I use 2 equal signs
+What I am meaning is
+I want to compare
+The value on the left hand side
+To the value on the right hand side
+So if I write this
+3 equal equal 2
+Means is 3 equal to 2
+And the answer is false
+If I put
+2 .5 equal equal
+5
+Over 2
+So the left value is already a value
+The right side
+Is an expression with the value 2 .5
+So if I execute
+I will get a true
+Because the values on both sides
+Left hand side and right hand side
+Are exactly the same
+I can even
+Store the result of such
+Comparison to a variable
+For instance let's say that
+V is equal to the result
+Of comparing
+3 equal to 2
+So this is an
+Expression which results in a value
+Which we know is false
+And it's a comparison
+Because it's a double equal sign
+So the result is false
+And this value of false is stored
+Via this assignment operation
+Into the variable called
+V
+So if I execute this
+Nothing will happen but
+Apparently but V now has
+The value false
+Stored if I print
+One cell later or several cells
+Later the value of V
+I will get that that value
+Is false because when I assigned the value
+It was pointing to
+A statement that was
+A false comparison
+I can do some
+Other comparisons like
+For instance I can say
+Is 3 bigger than 2?
+And the result will be true
+Or is 3
+Bigger or equal than 3?
+And in this case
+The result is true as well
+Or I could say
+Is 4
+Let's say
+Different than
+In Python
+Is written
+As follows
+Different is exclamation
+Equal
+So typically in many programming languages
+The exclamation mark means
+Not
+It's a shortcut for the
+For the negation
+So exclamation mark equal
+Can be translated as
+Not equal
+So is 4 not equal to 3?
+Well this is true
+Because 4 is not equal to 3
+And this is what I get
+So these are the comparisons
+So
+Something I can do
+Also as a very basic operation
+Is that sometimes I get
+A value let's say
+x equal
+1 over 3
+So I can print x
+And there are a lot of numbers here
+And I would like to just round this number
+To maybe 2 or 3 decimals
+That's very convenient when I want to
+Write results to some reports
+So the way of doing this is
+Like this
+I want to print
+The round number of x
+Up to let's say 2 decimals
+Ok?
+So this is basically
+A function
+Within a function
+I could just ignore the print function
+Because I know that if I just have one operation
+This is going to be printed on the screen
+So if I put round of x
+Comma 2
+This means take this number
+And just put 2 decimal points
+1, 2, 3
+And if I put 4
+I will get 4 of those decimal values
+But if I want to
+To make sure that this is printed because maybe in my cell
+I have many many things
+I will have to print a print
+But what I want to show you here
+Is that I can nest
+Results of functions
+Within other functions
+For instance like that
+I could even say
+Let's print
+The
+Result of rounding
+Well
+Dividing 1 over 3
+So 1 over 3
+Then I round
+And then I print
+I have to also put how many decimal points
+I want in my round function
+So this will work as well
+Typically
+It's a good idea to find a compromise
+Between how many things you nest
+In a function
+Which will result in very very concise
+And short expressions
+But not very easy to follow
+So I think it's a good idea
+To just make things like that
+x equal
+Maybe round
+I will do 1 over 3
+And then
+Print
+Round of x
+So this and this
+Are exactly the same code
+And give the same result
+But this is much easier to read
+And if you come to this code
+Maybe one week later
+It will be much easier
+To remember what you wanted to do
+If you see a code like that
+So don't try always to overcomplicate things
+And just try to find
+The optimal and shorter way
+Of writing things
+That's not always a good idea
+Ok
+So this is basically
+All the functions that you can do
+Just using Python
+Which seems that is not too much
+So for instance
+What if you want to take the exponential
+Of a number, or the logarithm
+Or the square root
+Well, you can't
+Python, by default, does not have
+All these functions in the code base
+But that's not a problem
+Because one of the advantages
+Of Python is that
+There are so many libraries
+That do different things
+And you can always import these libraries
+And use them when you want
+So if you don't need them
+You don't need to have all this code base
+Taking space on your program
+That's why it's very light
+But now it's important that I want to have
+Some more mathematical functions
+So there is a package
+Let's make a
+Text cell
+And let's call this
+Math
+Package
+So this is going to be our first package
+I need to import it
+Into Python
+So what I'm going to do is
+I'm going to write it
+In this way
+From math
+And this means
+From the math package
+That's something you have to know
+That there is a package called math
+I want to import
+The following functions
+sqrt, which is the square root
+And the function exp
+So if I
+Execute this
+From now on, in all my cells
+I can use these two functions now
+sqrt and exp
+For instance, what's the sqrt
+Of 25?
+Well, that's 5
+What's the exp of 0?
+Well, exp of 0 is 1
+Or the exp of 1
+Is equal to
+2 .71
+I could have imported
+All the functions of the package
+There is maybe like 50, 60 functions
+If I want to import all the functions
+In a given package
+I simply write this
+From math
+Import
+And a shortcut to say
+All the functions is the star
+From math
+Import star or asterisk
+Is going to import
+All the functions here
+So I just imported the logarithm function
+So what's the logarithm of 5?
+Is 1 .6
+Before importing this
+Package, this function was not
+Available
+Another way of importing a package
+And actually it's a better way and we are going to use it
+All the time
+Is importing a package
+But giving it a space name
+A name
+So I'm going to write like this
+Import math
+Let's take the package
+As
+Which means I want to call it
+M. And this name
+Is anything you want
+So some standard packages
+Some very specific names that
+Everyone uses and it's a good idea to
+Also use them because when you go
+To google or forums
+You will recognize right away that
+They are using this package
+Other packages, they don't have a standard name
+So you can just invent a name
+That makes sense for you
+And in your code. So I'm going to call this package math
+So import math as m
+And then
+Once I have imported the package
+With a name for myself
+I can just call any function
+By saying m
+So the name I gave here
+Which means
+From this package
+Dot access the function
+Exponential
+And then use it in this value
+Okay
+So I could just call this function
+My package
+Why not?
+It's not a very good name but
+I wouldn't be interested in doing that
+So from now on
+After I have executed this
+I can put here
+Call the package call
+That I give the name
+My package
+And then access the function exponential
+And apply this function to the number 4
+And my package
+Is because there is a mistake
+Okay
+That's what happens when you put very long names
+It's easier to make mistakes
+Okay
+Now you can say
+How can I know how many functions
+And what are the functions available in a given package?
+Well, that's very easy to do
+If you already know that
+The package math exists
+And the more you will write code
+And the more you will see documentation
+The more packages you will
+Get to know
+But if you are not sure of how many functions
+You can use
+You can always use the dir command
+And then you put dir math
+Which means
+Give me all the functions
+Available in the package called math
+Okay
+So and I get
+Name math is not defined
+Why is that?
+Because from this line
+I have changed the name
+Of the package math
+To my package
+So let me just take
+The original name
+I'm going to
+Delete this line because I'm not
+I don't use it anymore
+And if I want to delete a line
+What I can do is that I just position
+I click here outside
+So that is blue
+And I press the d
+Touch twice
+So the cell is deleted
+And then I put dir math
+And now math really refers
+To the math package
+And these are all the functions that this package
+Provides to the user
+Some of them
+Has this double underscore
+On the name
+This means that they are internal functions
+You can use them
+But it's not recommended to because these functions
+Maybe are used by some other functions
+So it's better not to touch them
+Okay but then you have
+Arccosinus
+You have exponential
+You have the gamma function
+Many many different functions
+That you can use now
+Thanks to this package
+You even have constants
+For instance you have the constant p
+Here
+This is not a function it's a number
+So you can say what's the number
+Math .pi
+And then you get the exact value
+Of the number pi
+Or the number e
+So each package
+Has different things at your disposal
+That you can use
+What are some of the basic libraries
+That you are going to need
+In any data science course
+Or data science job
+So let's put here
+Basic libraries
+Remember that when I switch
+To a text cell it's because I'm pressing
+Escape M
+And then I use the hash symbol
+To make it like a
+Title
+So basic libraries
+I'm going to just copy paste
+Some libraries they have here
+Are these ones
+So you have the OS
+Library package
+Which is the responsible of
+Controlling your computer as if it was
+The finder
+Or the
+The software that controls
+All your files and folders
+You have NumPy
+Which is a numeric pi
+Means a package that
+Allows you to do a lot of
+Calculations very fast
+In a vectorized way
+We are going to use it from the next lesson
+Pandas is a package
+Which is like a
+Evolution of NumPy
+That allows you to read excel
+Or read csds
+And manipulate table data
+In a way that is very convenient
+To make reports
+And to make graphs
+Matplotlib
+Is a package exclusively
+Dedicated to make plots
+And it's very very complete
+So the matplotlib
+Library has a
+Subset called pyplot
+And this is the one that most people use
+In a normal day
+And you can import
+Only the subpackage
+And the standard name is plt
+Scipy
+Which means scientific pi
+It's a library that allows you to do a lot of
+Scientific calculations
+And of course you have stats models
+That we will use to do some
+Statistics very very easy
+There are also
+Other packages
+Very useful for instance
+Skilllearn
+To do machine learning
+Or tensorflow which is used for
+Machine learning, deep learning
+Artificial intelligence
+And so on
